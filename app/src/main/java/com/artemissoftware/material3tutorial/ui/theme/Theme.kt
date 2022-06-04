@@ -1,6 +1,7 @@
 package com.artemissoftware.material3tutorial.ui.theme
 
 import android.os.Build
+import androidx.annotation.RequiresApi
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material3.*
 import androidx.compose.runtime.Composable
@@ -66,8 +67,9 @@ private val LightColorPalette = lightColorScheme(
     outline = GreenGrey50
 )
 
+@RequiresApi(Build.VERSION_CODES.S)
 @Composable
-fun Material3AppTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
+fun Material3TutorialTheme(darkTheme: Boolean = isSystemInDarkTheme(), content: @Composable () -> Unit) {
     val useDynamicColors = Build.VERSION.SDK_INT >= Build.VERSION_CODES.S
     val colors = when {
         useDynamicColors && darkTheme -> dynamicDarkColorScheme(LocalContext.current)

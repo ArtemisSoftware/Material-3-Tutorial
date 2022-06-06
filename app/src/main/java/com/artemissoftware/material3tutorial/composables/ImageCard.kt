@@ -1,19 +1,17 @@
 package com.artemissoftware.material3tutorial.composables
 
-import androidx.compose.runtime.Composable
 import androidx.compose.foundation.Image
 import androidx.compose.foundation.layout.*
 import androidx.compose.material.icons.Icons
 import androidx.compose.material.icons.outlined.FavoriteBorder
 import androidx.compose.material.icons.outlined.Share
 import androidx.compose.material3.*
+import androidx.compose.runtime.Composable
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.draw.clip
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import coil.compose.rememberAsyncImagePainter
-import com.artemissoftware.material3tutorial.Greeting
-import com.artemissoftware.material3tutorial.ui.theme.Material3TutorialTheme
 import com.google.accompanist.flowlayout.FlowRow
 import com.google.accompanist.flowlayout.SizeMode
 import kotlin.random.Random
